@@ -1,0 +1,43 @@
+/*
+ * Styles that affect all pages (e.g. affect the layout)
+ *= require_self
+*/
+
+/**
+ * Global Styles
+ * =============
+ */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+}
+
+h1 {
+  font-size: 1.6em;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+/**
+ * Layout Styles
+ * =============
+ */
+
+#wrapper {
+  width: 700px;
+  margin: 0 auto;
+}
+
+#header {
+  padding-bottom: 10px;
+}
+
+#footer {
+  font-style: italic;
+  font-size: 0.9em;
+}

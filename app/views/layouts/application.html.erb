@@ -4,11 +4,28 @@
   <title>Sparks</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
-
+<body class="<%= body_classes.join(' ') %>">
+  <div id="wrapper">
+    <div id="header">
+      <%= link_to image_tag("logo.png", :alt => "Sparks Logo"), root_path %>
+    </div>
+    <div id="content">
+      <%= yield %>
+    </div>
+    <div id="footer" class="section">
+      <p>
+        A
+        <%= link_to "BASES team", "http://bases.stanford.edu/" %>
+        in collaboration with
+        <%= link_to "Design Initiative", "http://designinitiative.posterous.com/" %>,
+        <%= link_to "Stanford ACM", "http://stanfordacm.com/" %>,
+        and
+        <%= link_to "ASSU", "http://assu.stanford.edu/" %>
+      </p>
+    </div>
+  </div>
 </body>
 </html>

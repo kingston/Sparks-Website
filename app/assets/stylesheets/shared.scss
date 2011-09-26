@@ -1,0 +1,51 @@
+/*
+ * Shared CSS classes that any page can use
+ *= require_self
+*/
+
+.section {
+  border-top: 1px solid #999;
+  padding-top: 10px;
+}
+
+.half-width {
+  width: 330px;
+  margin-right: 20px;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+/**
+ * Buttons
+ * =======
+ **/
+
+.action-button:hover {
+  background-color: #BD8039;
+}
+
+.action-button:active {
+  top: 1px;
+}
+
+.action-button {
+  background-color: #E09844;
+  font-size: 1.2em;
+  padding: 5px 10px;
+
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  position: relative;
+  cursor: pointer;
+}
