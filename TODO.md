@@ -6,6 +6,7 @@ Features
 
  * Contact Page
  * Team Page with member photos/bios
+ * Create a way to allow interested people to get involved
 
 Copy Changes
 ------------
