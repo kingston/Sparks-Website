@@ -1,5 +1,5 @@
 Sparks::Application.routes.draw do
-  get "public/index"
+  match "/about" => "public#about", :as => :about
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

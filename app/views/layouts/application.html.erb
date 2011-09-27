@@ -10,8 +10,21 @@
 <body class="<%= body_classes.join(' ') %>">
   <div id="wrapper">
     <div id="header">
-      <%= link_to image_tag("logo.png", :alt => "Sparks Logo"), root_path %>
+      <div id="logo">
+        <%= link_to image_tag("logo.png", :alt => "Sparks Logo"), root_path %>
+      </div>
+      <div id="nav-bar">
+        <ul>
+          <li>
+            <%= link_to "Home", root_path %>
+          </li>
+          <li>
+            <%= link_to "About", about_path %>
+          </li>
+        </ul>
+      </div>
     </div>
+    <div class="clear"></div>
     <div id="content">
       <%= yield %>
     </div>

@@ -35,6 +35,28 @@ h2 {
 
 #header {
   padding-bottom: 10px;
+  #logo {
+    float: left;
+  }
+  #nav-bar {
+    float: right;
+    margin-top: 20px;
+    ul {
+      li {
+        display: inline;
+        list-style-type: none;
+        margin: 0 10px;
+        a, a:visited {
+          color: #011842;
+        }
+        a {
+          font-size: 1.2em;
+          text-decoration: none;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
 
 #footer {
